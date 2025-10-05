@@ -3,7 +3,7 @@ import React from 'react'
 const Home = () => {
   return (
     <div>
-      <p>Home file</p>
+      <p className='font-bold '>Home file</p>
     </div>
   )
 }
