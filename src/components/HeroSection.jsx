@@ -1,8 +1,10 @@
 import React from 'react'
 import { assets } from '../assets/assets'
 import { ArrowRight, CalendarIcon, ClockIcon } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 
 const HeroSection = () => {
+    const navigate = useNavigate();
   return (
     <div className='flex flex-col items-start justify-center gap-4 
     px-6 md:px-16 lg:px-36 bg-[url("/backgroundImage.png")] bg-center 
@@ -22,7 +24,7 @@ const HeroSection = () => {
       </div>
       <p className='max-w-md text-gray-300'>A group of misfit outlaws who have all lost their original families learn to form a new, strong one together. </p>
     
-      <button className='flex gap-1 items-center px-6 py-3 text-sm bg-primary 
+      <button onClick={()=>navigate("/movies")} className='flex gap-1 items-center px-6 py-3 text-sm bg-primary 
       hover:bg-primary-dull transition rounded-full font-medium cursor-pointer hover:gap-2'>
         Explore Movies 
         <ArrowRight className="w-5 h-5"/>
