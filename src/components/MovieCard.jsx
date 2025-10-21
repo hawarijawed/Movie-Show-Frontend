@@ -12,7 +12,7 @@ const MovieCard = ({movie}) => {
       className='rounded-lg h-52 w-full object-cover object-right-bottom cursor-pointer'/>
 
       <p className='font-semibold mt-2 truncate'>{movie.title}</p>
-      <p className='text-sm text-gray-400 mt-2'>{new Date(movie.release_data).getFullYear} • {movie.genres.slice(0,2).map(genre => genre.name).join(" | ")} 
+      <p className='text-sm text-gray-400 mt-2'>{new Date(movie.release_data).getFullYear()} • {movie.genres.slice(0,2).map(genre => genre.name).join(" | ")} 
         • {timeFormate(movie.runtime)}
       </p>
 
